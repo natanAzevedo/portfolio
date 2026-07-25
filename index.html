@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Natanael Freitas | Portfólio</title>
+  <title>Natanael Freitas | Desenvolvedor Full-Stack</title>
   <meta name="description"
-    content="Desenvolvedor Full-Stack especializado em Java, Python, JavaScript e mobile. Estudante de Ciência da Computação com projetos reais.">
+    content="Desenvolvedor Full-Stack especializado em TypeScript, Next.js, React, Node.js, Java, Python e Clojure. Bacharel em Ciência da Computação pela UNIFOR.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -21,7 +21,7 @@
         <nav>
           <ul class="nav">
             <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
+            <li><a href="#about">Sobre & Stack</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
@@ -32,7 +32,7 @@
         <div class="mobile-nav">
           <ul class="nav">
             <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
+            <li><a href="#about">Sobre & Stack</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
@@ -45,11 +45,19 @@
   <section id="home" class="hero">
     <div class="container">
       <div class="hero-content fade-in-up">
-        <h1>Portfólio</h1>
+        <h1>Natanael Freitas</h1>
+        <p class="subtitle">
+          Desenvolvedor Full-Stack especializado em <strong>TypeScript, Next.js, Node.js e Java</strong>.
+          Criando aplicações web modernas, escaláveis e de alta performance.
+        </p>
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary">
             <i class="fas fa-code"></i>
             Ver Projetos
+          </a>
+          <a href="curriculo.pdf" download="Curriculo_Natanael_Freitas.pdf" class="btn btn-secondary">
+            <i class="fas fa-file-pdf"></i>
+            Baixar Currículo
           </a>
           <a href="#contact" class="btn btn-secondary">
             <i class="fas fa-envelope"></i>
@@ -60,55 +68,97 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About & Tech Stack Section -->
   <section id="about" class="section">
     <div class="container">
       <h2 class="section-title">Sobre Mim</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Sou estudante de <strong>Bacharelado em Ciência da Computação</strong> na UNIFOR com previsão de conclusão
-            em julho de 2026. Possuo experiência prática em desenvolvimento <strong>Full-Stack</strong>, com foco em
-            tecnologias modernas como Java, Python, JavaScript e desenvolvimento mobile com Flutter.</p>
+      <div class="about-content" style="grid-template-columns: 1fr; gap: 2.5rem;">
+        <div class="about-text" style="max-width: 900px; margin: 0 auto; text-align: center;">
+          <p>
+            Sou graduado em <strong>Bacharelado em Ciência da Computação</strong> pela UNIFOR (Formado em 2026). 
+            Possuo experiência prática em desenvolvimento <strong>Full-Stack</strong>, atuando na construção de 
+            interfaces modernas, APIs robustas e arquiteturas escaláveis.
+          </p>
 
-          <p>Tenho paixão por resolver problemas complexos através da tecnologia e estou sempre em busca de novos
-            desafios que me permitam crescer profissionalmente e contribuir com soluções inovadoras.</p>
-
-          <p>Busco oportunidades para aplicar meus conhecimentos em projetos reais, trabalhando em equipes ágeis e
-            colaborativas.</p>
+          <p>
+            Tenho paixão por resolver problemas complexos através de tecnologia limpa e bem estruturada. 
+            Ao longo da minha trajetória, trabalhei com diversas tecnologias e ecossistemas, abrangendo 
+            desde aplicações web reativas e sistemas inteligentes até programação funcional e bancos de dados relacionais.
+          </p>
         </div>
 
-        <div class="skills-grid">
-          <div class="skill-item">
-            <i class="fab fa-java skill-icon"></i>
-            <span class="skill-name">Java</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-python skill-icon"></i>
-            <span class="skill-name">Python</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-js-square skill-icon"></i>
-            <span class="skill-name">JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-react skill-icon"></i>
-            <span class="skill-name">React</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-node-js skill-icon"></i>
-            <span class="skill-name">Node.js</span>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-mobile-alt skill-icon"></i>
-            <span class="skill-name">Flutter</span>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-database skill-icon"></i>
-            <span class="skill-name">MySQL</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-aws skill-icon"></i>
-            <span class="skill-name">AWS</span>
+        <!-- Tech Stack Organized by Technical Layer -->
+        <div class="tech-stack-container">
+          <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">
+            Tecnologias por Camada Técnica
+          </h3>
+          
+          <div class="tech-layers-grid">
+            <!-- Camada A: Frontend & UI -->
+            <div class="tech-layer-card">
+              <div class="tech-layer-header">
+                <i class="fas fa-laptop-code tech-layer-icon"></i>
+                <h4 class="tech-layer-title">Frontend & UI</h4>
+              </div>
+              <div class="tech-layer-skills">
+                <div class="skill-item">
+                  <i class="fab fa-js-square skill-icon"></i>
+                  <span class="skill-name">TypeScript</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-react skill-icon"></i>
+                  <span class="skill-name">React / Next.js</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-wind skill-icon"></i>
+                  <span class="skill-name">Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camada B: Backend & Linguagens -->
+            <div class="tech-layer-card">
+              <div class="tech-layer-header">
+                <i class="fas fa-server tech-layer-icon"></i>
+                <h4 class="tech-layer-title">Backend & Linguagens</h4>
+              </div>
+              <div class="tech-layer-skills">
+                <div class="skill-item">
+                  <i class="fab fa-node-js skill-icon"></i>
+                  <span class="skill-name">Node.js</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-java skill-icon"></i>
+                  <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-python skill-icon"></i>
+                  <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-code-branch skill-icon"></i>
+                  <span class="skill-name">Clojure</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Camada C: Banco de Dados & Cloud -->
+            <div class="tech-layer-card">
+              <div class="tech-layer-header">
+                <i class="fas fa-database tech-layer-icon"></i>
+                <h4 class="tech-layer-title">Banco de Dados & Cloud</h4>
+              </div>
+              <div class="tech-layer-skills">
+                <div class="skill-item">
+                  <i class="fas fa-database skill-icon"></i>
+                  <span class="skill-name">MySQL</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-aws skill-icon"></i>
+                  <span class="skill-name">AWS</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -118,11 +168,23 @@
   <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Projetos em Destaque</h2>
-      <div class="projects-grid">
+      <h2 class="section-title">Projetos</h2>
 
-        <article class="project-card">
+      <!-- Categoria A: Projetos em Destaque -->
+      <div class="project-category-header">
+        <h3 class="project-category-title">
+          <i class="fas fa-fire" style="color: #ef4444;"></i>
+          Projetos em Destaque
+        </h3>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 1. Aleteia -->
+        <article class="project-card featured">
           <div class="project-header">
+            <span class="badge-featured">
+              <i class="fas fa-star"></i> Destaque
+            </span>
             <h3 class="project-title">Aleteia - Educação Transparente e Gratuita</h3>
             <p class="project-description">Plataforma para descobrir, comparar e organizar cursos online gratuitos de qualidade. Educação honesta, sem algoritmos nocivos ou gamificação agressiva.</p>
           </div>
@@ -142,11 +204,41 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <!-- 2. ImovelVision -->
+        <article class="project-card featured">
           <div class="project-header">
-            <h3 class="project-title">Blog - Descubra Projetos que Inspiram</h3>
-            <p class="project-description">Blog pessoal com artigos sobre tecnologia, projetos inspiradores e histórias
-              de desenvolvimento. Plataforma para compartilhar conhecimento e experiências do mundo tech.</p>
+            <span class="badge-featured">
+              <i class="fas fa-star"></i> Destaque
+            </span>
+            <h3 class="project-title">ImovelVision - IA para Imobiliárias</h3>
+            <p class="project-description">Transforme Fotos de Imóveis em Vendas com IA! Staging virtual, descrições persuasivas em PT-BR para redes sociais. Plataforma completa para corretores e imobiliárias acelerarem suas vendas.</p>
+          </div>
+          <div class="project-body">
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Vercel</span>
+              <span class="tech-tag">AI Integration</span>
+            </div>
+            <div class="project-links">
+              <a href="https://imovelvision.vercel.app/" target="_blank" rel="noopener" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Ver Site
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Blog (TechFlow) -->
+        <article class="project-card featured">
+          <div class="project-header">
+            <span class="badge-featured">
+              <i class="fas fa-star"></i> Destaque
+            </span>
+            <h3 class="project-title">Blog (TechFlow)</h3>
+            <p class="project-description">Blog pessoal com artigos sobre tecnologia, projetos inspiradores e histórias de desenvolvimento. Plataforma para compartilhar conhecimento e experiências do mundo tech.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -163,13 +255,23 @@
             </div>
           </div>
         </article>
+      </div>
 
+      <!-- Categoria B: Outros Projetos -->
+      <div class="project-category-header" style="margin-top: 3.5rem;">
+        <h3 class="project-category-title">
+          <i class="fas fa-folder-open" style="color: var(--accent-primary);"></i>
+          Outros Projetos
+        </h3>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- 2. Jogo de Xadrez em Java (Terminal) -->
         <article class="project-card">
           <div class="project-header">
-            <h3 class="project-title">Jogo de Xadrez em Java</h3>
-            <p class="project-description">Jogo de xadrez completo desenvolvido em Java com interface de terminal
-              colorizada. Implementa todas as regras do xadrez incluindo movimentos especiais como roque, en passant e
-              promoção de peão.</p>
+            <h3 class="project-title">Jogo de Xadrez em Java (Terminal)</h3>
+            <p class="project-description">Jogo de xadrez completo desenvolvido em Java com interface de terminal colorizada. Implementa todas as regras do xadrez incluindo movimentos especiais como roque, en passant e promoção de peão.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -187,60 +289,11 @@
           </div>
         </article>
 
+        <!-- 3. Sistema de Apostas (Clojure) -->
         <article class="project-card">
           <div class="project-header">
-            <h3 class="project-title">ImovelVision - IA para Imobiliárias</h3>
-            <p class="project-description">Transforme Fotos de Imóveis em Vendas com IA! Staging virtual, descrições
-              persuasivas em PT-BR para redes sociais. Plataforma completa para corretores e imobiliárias acelerarem
-              suas vendas.</p>
-          </div>
-          <div class="project-body">
-            <div class="project-tech">
-              <span class="tech-tag">Next.js</span>
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Tailwind CSS</span>
-              <span class="tech-tag">Vercel</span>
-              <span class="tech-tag">AI Integration</span>
-              <span class="tech-tag">Staging Virtual</span>
-              <span class="tech-tag">Automated Descriptions</span>
-
-            </div>
-            <div class="project-links">
-              <a href="https://imovelvision.vercel.app/" target="_blank" rel="noopener" class="project-link">
-                <i class="fas fa-external-link-alt"></i>
-                Ver Site
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Plataforma de E-commerce</h3>
-            <p class="project-description">Sistema completo de e-commerce com frontend responsivo e backend robusto,
-              incluindo autenticação de usuários e processamento de pagamentos.</p>
-          </div>
-          <div class="project-body">
-            <div class="project-tech">
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">HTML/CSS</span>
-              <span class="tech-tag">API REST</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/natanAzevedo/e-commerce" target="_blank" rel="noopener" class="project-link">
-                <i class="fab fa-github"></i>
-                Código
-              </a>
-            </div>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Sistema de Apostas (Bet)</h3>
-            <p class="project-description">Plataforma de apostas desenvolvida em Clojure com controle de saldo, registro
-              de apostas e cálculo automático de ganhos.</p>
+            <h3 class="project-title">Sistema de Apostas (Clojure)</h3>
+            <p class="project-description">Plataforma de apostas desenvolvida em Clojure com controle de saldo, registro de apostas e cálculo automático de ganhos.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -257,33 +310,11 @@
           </div>
         </article>
 
+        <!-- 4. Sistema de Catálogo de Filmes em Java -->
         <article class="project-card">
           <div class="project-header">
-            <h3 class="project-title">Agenda de Contatos</h3>
-            <p class="project-description">Aplicação web completa com CRUD de contatos, sistema de autenticação e
-              interface intuitiva desenvolvida em Django.</p>
-          </div>
-          <div class="project-body">
-            <div class="project-tech">
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Bootstrap</span>
-              <span class="tech-tag">SQLite</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/natanAzevedo/HubContatos" target="_blank" rel="noopener" class="project-link">
-                <i class="fab fa-github"></i>
-                Código
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Sistema de Catálogo de Filmes</h3>
-            <p class="project-description">Aplicação desktop em Java para catalogação e consulta de filmes com sistema
-              de filtros avançados e persistência em banco.</p>
+            <h3 class="project-title">Sistema de Catálogo de Filmes em Java</h3>
+            <p class="project-description">Aplicação desktop em Java para catalogação e consulta de filmes com sistema de filtros avançados e persistência em banco de dados.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -293,37 +324,13 @@
               <span class="tech-tag">JDBC</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/natanAzevedo/sistema-Filme" target="_blank" rel="noopener"
-                class="project-link">
+              <a href="https://github.com/natanAzevedo/sistema-Filme" target="_blank" rel="noopener" class="project-link">
                 <i class="fab fa-github"></i>
                 Código
               </a>
             </div>
           </div>
         </article>
-
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Jogo Pong (POO)</h3>
-            <p class="project-description">Implementação do clássico jogo Pong utilizando conceitos de Programação
-              Orientada a Objetos com ranking persistente.</p>
-          </div>
-          <div class="project-body">
-            <div class="project-tech">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">Swing</span>
-              <span class="tech-tag">POO</span>
-              <span class="tech-tag">Game Dev</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/natanAzevedo/PingPong" target="_blank" rel="noopener" class="project-link">
-                <i class="fab fa-github"></i>
-                Código
-              </a>
-            </div>
-          </div>
-        </article>
-
       </div>
     </div>
   </section>
@@ -385,13 +392,17 @@
           <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Formação & Certificações</h3>
           <p style="color: var(--text-secondary); margin-bottom: 1rem;">
             <strong>Bacharelado em Ciência da Computação</strong> - UNIFOR<br>
-            <em>Conclusão prevista: Julho de 2026</em>
+            <em>Formado em 2026</em>
           </p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem;">
             <span class="tech-tag">AWS Academy Cloud Foundations</span>
             <span class="tech-tag">Java POO (Udemy)</span>
             <span class="tech-tag">Python (Udemy)</span>
           </div>
+          <a href="curriculo.pdf" download="Curriculo_Natanael_Freitas.pdf" class="btn btn-primary">
+            <i class="fas fa-file-pdf"></i>
+            Baixar Currículo Completo (PDF)
+          </a>
         </div>
       </div>
     </div>
@@ -400,9 +411,9 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Natanael Azevedo. Todos os direitos reservados.</p>
+      <p>&copy; 2026 Natanael Azevedo. Todos os direitos reservados.</p>
       <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-        Fortaleza - CE • Currículo disponível em PDF mediante solicitação
+        Fortaleza - CE • <a href="curriculo.pdf" download="Curriculo_Natanael_Freitas.pdf" class="footer-cv-link"><i class="fas fa-file-pdf"></i> Baixar Currículo (PDF)</a>
       </p>
     </div>
   </footer>
