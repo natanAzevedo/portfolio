@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Natanael Freitas | Desenvolvedor Full-Stack</title>
+  <title data-i18n="page_title">Natanael Freitas | Desenvolvedor Full-Stack</title>
   <meta name="description"
     content="Desenvolvedor Full-Stack especializado em TypeScript, Next.js, React, Node.js, Java, Python e Clojure. Bacharel em Ciência da Computação pela UNIFOR.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="i18n.js"></script>
 </head>
 
 <body>
@@ -20,22 +21,42 @@
         <div class="logo">Natanael Freitas</div>
         <nav>
           <ul class="nav">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre & Stack</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#home" data-i18n="nav_home">Início</a></li>
+            <li><a href="#about" data-i18n="nav_about">Sobre & Stack</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
           </ul>
         </nav>
-        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-          <i class="fas fa-bars"></i>
-        </button>
+        <div class="header-right">
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="pt" aria-label="Português">
+              <span class="flag">🇧🇷</span> PT
+            </button>
+            <button class="lang-btn" data-lang="en" aria-label="English">
+              <span class="flag">🇺🇸</span> EN
+            </button>
+          </div>
+          <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
         <div class="mobile-nav">
           <ul class="nav">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre & Stack</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#home" data-i18n="nav_home">Início</a></li>
+            <li><a href="#about" data-i18n="nav_about">Sobre & Stack</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
           </ul>
+          <div style="margin-top: 1.25rem; display: flex; justify-content: center;">
+            <div class="lang-switch">
+              <button class="lang-btn active" data-lang="pt" aria-label="Português">
+                <span class="flag">🇧🇷</span> PT
+              </button>
+              <button class="lang-btn" data-lang="en" aria-label="English">
+                <span class="flag">🇺🇸</span> EN
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -46,19 +67,19 @@
     <div class="container">
       <div class="hero-content fade-in-up">
         <h1>Natanael Freitas</h1>
-        <p class="subtitle">
+        <p class="subtitle" data-i18n-html="hero_subtitle">
           Desenvolvedor Full-Stack especializado em <strong>TypeScript, Next.js, Node.js e Java</strong>.
           Criando aplicações web modernas, escaláveis e de alta performance.
         </p>
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary">
             <i class="fas fa-code"></i>
-            Ver Projetos
+            <span data-i18n="hero_btn_projects">Ver Projetos</span>
           </a>
       
           <a href="#contact" class="btn btn-secondary">
             <i class="fas fa-envelope"></i>
-            Entre em Contato
+            <span data-i18n="hero_btn_contact">Entre em Contato</span>
           </a>
         </div>
       </div>
@@ -68,16 +89,16 @@
   <!-- About & Tech Stack Section -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">Sobre Mim</h2>
+      <h2 class="section-title" data-i18n="about_title">Sobre Mim</h2>
       <div class="about-content" style="grid-template-columns: 1fr; gap: 2.5rem;">
         <div class="about-text" style="max-width: 900px; margin: 0 auto; text-align: center;">
-          <p>
+          <p data-i18n-html="about_p1">
             Sou graduado em <strong>Bacharelado em Ciência da Computação</strong> pela UNIFOR (Formado em 2026). 
             Possuo experiência prática em desenvolvimento <strong>Full-Stack</strong>, atuando na construção de 
             interfaces modernas, APIs robustas e arquiteturas escaláveis.
           </p>
 
-          <p>
+          <p data-i18n="about_p2">
             Tenho paixão por resolver problemas complexos através de tecnologia limpa e bem estruturada. 
             Ao longo da minha trajetória, trabalhei com diversas tecnologias e ecossistemas, abrangendo 
             desde aplicações web reativas e sistemas inteligentes até programação funcional e bancos de dados relacionais.
@@ -86,7 +107,7 @@
 
         <!-- Tech Stack Organized by Technical Layer -->
         <div class="tech-stack-container">
-          <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">
+          <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);" data-i18n="tech_layers_title">
             Tecnologias por Camada Técnica
           </h3>
           
@@ -95,7 +116,7 @@
             <div class="tech-layer-card">
               <div class="tech-layer-header">
                 <i class="fas fa-laptop-code tech-layer-icon"></i>
-                <h4 class="tech-layer-title">Frontend & UI</h4>
+                <h4 class="tech-layer-title" data-i18n="layer_frontend">Frontend & UI</h4>
               </div>
               <div class="tech-layer-skills">
                 <div class="skill-item">
@@ -117,7 +138,7 @@
             <div class="tech-layer-card">
               <div class="tech-layer-header">
                 <i class="fas fa-server tech-layer-icon"></i>
-                <h4 class="tech-layer-title">Backend & Linguagens</h4>
+                <h4 class="tech-layer-title" data-i18n="layer_backend">Backend & Linguagens</h4>
               </div>
               <div class="tech-layer-skills">
                 <div class="skill-item">
@@ -143,7 +164,7 @@
             <div class="tech-layer-card">
               <div class="tech-layer-header">
                 <i class="fas fa-database tech-layer-icon"></i>
-                <h4 class="tech-layer-title">Banco de Dados & Cloud</h4>
+                <h4 class="tech-layer-title" data-i18n="layer_database">Banco de Dados & Cloud</h4>
               </div>
               <div class="tech-layer-skills">
                 <div class="skill-item">
@@ -165,13 +186,13 @@
   <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Projetos</h2>
+      <h2 class="section-title" data-i18n="projects_title">Projetos</h2>
 
       <!-- Categoria A: Projetos em Destaque -->
       <div class="project-category-header">
         <h3 class="project-category-title">
           <i class="fas fa-fire" style="color: #ef4444;"></i>
-          Projetos em Destaque
+          <span data-i18n="category_featured">Projetos em Destaque</span>
         </h3>
       </div>
 
@@ -181,16 +202,16 @@
           <div class="project-media placeholder-media gradient-civic">
             <div class="placeholder-content">
               <i class="fas fa-landmark placeholder-icon"></i>
-              <span class="placeholder-tag">Tech Cívica</span>
+              <span class="placeholder-tag" data-i18n="tag_civic">Tech Cívica</span>
             </div>
-            <span class="media-badge"><i class="fas fa-globe"></i> Web App</span>
+            <span class="media-badge"><i class="fas fa-globe"></i> <span data-i18n="badge_webapp">Web App</span></span>
           </div>
           <div class="project-header">
             <span class="badge-featured">
-              <i class="fas fa-star"></i> Destaque
+              <i class="fas fa-star"></i> <span data-i18n="badge_featured">Destaque</span>
             </span>
-            <h3 class="project-title">Fiscaliza Brasil - Transparência Legislativa</h3>
-            <p class="project-description">Plataforma web de tecnologia cívica para monitoramento e controle social da atuação parlamentar. Consolida e visualiza dados públicos da Câmara dos Deputados e do Senado Federal, incluindo despesas (CEAP), proposições e emendas parlamentares com estatísticas e comparativos.</p>
+            <h3 class="project-title" data-i18n="p1_title">Fiscaliza Brasil - Transparência Legislativa</h3>
+            <p class="project-description" data-i18n="p1_desc">Plataforma web de tecnologia cívica para monitoramento e controle social da atuação parlamentar. Consolida e visualiza dados públicos da Câmara dos Deputados e do Senado Federal, incluindo despesas (CEAP), proposições e emendas parlamentares com estatísticas e comparativos.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -204,7 +225,7 @@
             <div class="project-links">
               <a href="https://fiscalizabr.duckdns.org/" target="_blank" rel="noopener" class="project-link">
                 <i class="fas fa-external-link-alt"></i>
-                Ver Site
+                <span data-i18n="link_view_site">Ver Site</span>
               </a>
             </div>
           </div>
@@ -215,16 +236,16 @@
           <div class="project-media placeholder-media gradient-edu">
             <div class="placeholder-content">
               <i class="fas fa-graduation-cap placeholder-icon"></i>
-              <span class="placeholder-tag">Educação</span>
+              <span class="placeholder-tag" data-i18n="tag_edu">Educação</span>
             </div>
-            <span class="media-badge"><i class="fas fa-globe"></i> Web App</span>
+            <span class="media-badge"><i class="fas fa-globe"></i> <span data-i18n="badge_webapp">Web App</span></span>
           </div>
           <div class="project-header">
             <span class="badge-featured">
-              <i class="fas fa-star"></i> Destaque
+              <i class="fas fa-star"></i> <span data-i18n="badge_featured">Destaque</span>
             </span>
-            <h3 class="project-title">Aleteia - Educação Transparente e Gratuita</h3>
-            <p class="project-description">Plataforma que agrega, categoriza e recomenda cursos gratuitos de fontes oficiais (Enap, IFSC, IFRS, Rede e-Tec), com trilhas de aprendizagem, busca por categoria, recomendações personalizadas e autenticação de usuário.</p>
+            <h3 class="project-title" data-i18n="p2_title">Aleteia - Educação Transparente e Gratuita</h3>
+            <p class="project-description" data-i18n="p2_desc">Plataforma que agrega, categoriza e recomenda cursos gratuitos de fontes oficiais (Enap, IFSC, IFRS, Rede e-Tec), com trilhas de aprendizagem, busca por categoria, recomendações personalizadas e autenticação de usuário.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -236,7 +257,7 @@
             <div class="project-links">
               <a href="https://aleteia.cc/" target="_blank" rel="noopener" class="project-link">
                 <i class="fas fa-external-link-alt"></i>
-                Ver Site
+                <span data-i18n="link_view_site">Ver Site</span>
               </a>
             </div>
           </div>
@@ -247,16 +268,16 @@
           <div class="project-media placeholder-media gradient-ai">
             <div class="placeholder-content">
               <i class="fas fa-robot placeholder-icon"></i>
-              <span class="placeholder-tag">Inteligência Artificial</span>
+              <span class="placeholder-tag" data-i18n="tag_ai">Inteligência Artificial</span>
             </div>
-            <span class="media-badge"><i class="fas fa-sparkles"></i> SaaS IA</span>
+            <span class="media-badge"><i class="fas fa-sparkles"></i> <span data-i18n="badge_saas">SaaS IA</span></span>
           </div>
           <div class="project-header">
             <span class="badge-featured">
-              <i class="fas fa-star"></i> Destaque
+              <i class="fas fa-star"></i> <span data-i18n="badge_featured">Destaque</span>
             </span>
-            <h3 class="project-title">ImovelVision - IA para Imobiliárias</h3>
-            <p class="project-description">SaaS que gera staging virtual via IA (Flux) e descrição de anúncio persuasiva em PT-BR (Groq), com planos de assinatura e pagamento via Pix.</p>
+            <h3 class="project-title" data-i18n="p3_title">ImovelVision - IA para Imobiliárias</h3>
+            <p class="project-description" data-i18n="p3_desc">SaaS que gera staging virtual via IA (Flux) e descrição de anúncio persuasiva em PT-BR (Groq), com planos de assinatura e pagamento via Pix.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -270,7 +291,7 @@
             <div class="project-links">
               <a href="https://imovelvision.vercel.app/" target="_blank" rel="noopener" class="project-link">
                 <i class="fas fa-external-link-alt"></i>
-                Ver Site
+                <span data-i18n="link_view_site">Ver Site</span>
               </a>
             </div>
           </div>
@@ -281,16 +302,16 @@
           <div class="project-media placeholder-media gradient-blog">
             <div class="placeholder-content">
               <i class="fas fa-newspaper placeholder-icon"></i>
-              <span class="placeholder-tag">Conteúdo & Blog</span>
+              <span class="placeholder-tag" data-i18n="tag_blog">Conteúdo & Blog</span>
             </div>
-            <span class="media-badge"><i class="fas fa-pen-nib"></i> Blog</span>
+            <span class="media-badge"><i class="fas fa-pen-nib"></i> <span data-i18n="badge_blog">Blog</span></span>
           </div>
           <div class="project-header">
             <span class="badge-featured">
-              <i class="fas fa-star"></i> Destaque
+              <i class="fas fa-star"></i> <span data-i18n="badge_featured">Destaque</span>
             </span>
-            <h3 class="project-title">Blog (TechFlow)</h3>
-            <p class="project-description">Blog pessoal com artigos sobre tecnologia, projetos inspiradores e histórias de desenvolvimento. Plataforma para compartilhar conhecimento e experiências do mundo tech.</p>
+            <h3 class="project-title" data-i18n="p4_title">Blog (TechFlow)</h3>
+            <p class="project-description" data-i18n="p4_desc">Blog pessoal com artigos sobre tecnologia, projetos inspiradores e histórias de desenvolvimento. Plataforma para compartilhar conhecimento e experiências do mundo tech.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -302,7 +323,7 @@
             <div class="project-links">
               <a href="https://techflowblog.vercel.app/" target="_blank" rel="noopener" class="project-link">
                 <i class="fas fa-external-link-alt"></i>
-                Ver Site
+                <span data-i18n="link_view_site">Ver Site</span>
               </a>
             </div>
           </div>
@@ -313,7 +334,7 @@
       <div class="project-category-header" style="margin-top: 3.5rem;">
         <h3 class="project-category-title">
           <i class="fas fa-folder-open" style="color: var(--accent-primary);"></i>
-          Outros Projetos
+          <span data-i18n="category_other">Outros Projetos</span>
         </h3>
       </div>
 
@@ -324,13 +345,13 @@
           <div class="project-media placeholder-media gradient-contacts">
             <div class="placeholder-content">
               <i class="fas fa-address-book placeholder-icon"></i>
-              <span class="placeholder-tag">Agenda & Contatos</span>
+              <span class="placeholder-tag" data-i18n="tag_contacts">Agenda & Contatos</span>
             </div>
             <span class="media-badge"><i class="fab fa-python"></i> Django</span>
           </div>
           <div class="project-header">
-            <h3 class="project-title">HubContatos - Agenda & Gestão de Contatos</h3>
-            <p class="project-description">Aplicação web desenvolvida em Django para gerenciamento completo de contatos (CRUD). Inclui sistema de autenticação, contatos privados por usuário, categorias, listagem paginada e upload de fotos via Supabase Storage.</p>
+            <h3 class="project-title" data-i18n="p5_title">HubContatos - Agenda & Gestão de Contatos</h3>
+            <p class="project-description" data-i18n="p5_desc">Aplicação web desenvolvida em Django para gerenciamento completo de contatos (CRUD). Inclui sistema de autenticação, contatos privados por usuário, categorias, listagem paginada e upload de fotos via Supabase Storage.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -343,7 +364,7 @@
             <div class="project-links">
               <a href="https://github.com/natanAzevedo/HubContatos" target="_blank" rel="noopener" class="project-link">
                 <i class="fab fa-github"></i>
-                Código
+                <span data-i18n="link_code">Código</span>
               </a>
             </div>
           </div>
@@ -353,11 +374,11 @@
         <article class="project-card">
           <div class="project-media">
             <img src="gif-img/chess-game.gif" alt="Demonstração do jogo de xadrez rodando no terminal" loading="lazy">
-            <span class="media-badge gif-badge"><i class="fas fa-play"></i> GIF Demo</span>
+            <span class="media-badge gif-badge"><i class="fas fa-play"></i> <span data-i18n="badge_gif">GIF Demo</span></span>
           </div>
           <div class="project-header">
-            <h3 class="project-title">Jogo de Xadrez em Java (Terminal)</h3>
-            <p class="project-description">Jogo de xadrez completo desenvolvido em Java com interface de terminal colorizada. Implementa todas as regras do xadrez incluindo movimentos especiais como roque, en passant e promoção de peão.</p>
+            <h3 class="project-title" data-i18n="p6_title">Jogo de Xadrez em Java (Terminal)</h3>
+            <p class="project-description" data-i18n="p6_desc">Jogo de xadrez completo desenvolvido em Java com interface de terminal colorizada. Implementa todas as regras do xadrez incluindo movimentos especiais como roque, en passant e promoção de peão.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -369,21 +390,21 @@
             <div class="project-links">
               <a href="https://github.com/natanAzevedo/chess-game" target="_blank" rel="noopener" class="project-link">
                 <i class="fab fa-github"></i>
-                Código
+                <span data-i18n="link_code">Código</span>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- 2. Sistema de Catálogo de Filmes em Java -->
+        <!-- 3. Sistema de Catálogo de Filmes em Java -->
         <article class="project-card">
           <div class="project-media">
             <img src="gif-img/sistem. film.gif" alt="Demonstração do catálogo de filmes desktop" loading="lazy">
-            <span class="media-badge gif-badge"><i class="fas fa-play"></i> GIF Demo</span>
+            <span class="media-badge gif-badge"><i class="fas fa-play"></i> <span data-i18n="badge_gif">GIF Demo</span></span>
           </div>
           <div class="project-header">
-            <h3 class="project-title">Sistema de Catálogo de Filmes em Java</h3>
-            <p class="project-description">Aplicação desktop em Java para catalogação e consulta de filmes com sistema de filtros avançados e persistência em banco de dados.</p>
+            <h3 class="project-title" data-i18n="p7_title">Sistema de Catálogo de Filmes em Java</h3>
+            <p class="project-description" data-i18n="p7_desc">Aplicação desktop em Java para catalogação e consulta de filmes com sistema de filtros avançados e persistência em banco de dados.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -395,24 +416,24 @@
             <div class="project-links">
               <a href="https://github.com/natanAzevedo/sistema-Filme" target="_blank" rel="noopener" class="project-link">
                 <i class="fab fa-github"></i>
-                Código
+                <span data-i18n="link_code">Código</span>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- 3. Sistema de Apostas (Clojure) -->
+        <!-- 4. Sistema de Apostas (Clojure) -->
         <article class="project-card">
           <div class="project-media placeholder-media gradient-clojure">
             <div class="placeholder-content">
               <i class="fas fa-coins placeholder-icon"></i>
-              <span class="placeholder-tag">Finanças & Apostas</span>
+              <span class="placeholder-tag" data-i18n="tag_betting">Finanças & Apostas</span>
             </div>
             <span class="media-badge"><i class="fas fa-code-branch"></i> Clojure</span>
           </div>
           <div class="project-header">
-            <h3 class="project-title">Sistema de Apostas (Clojure)</h3>
-            <p class="project-description">Plataforma de apostas desenvolvida em Clojure com controle de saldo, registro de apostas e cálculo automático de ganhos.</p>
+            <h3 class="project-title" data-i18n="p8_title">Sistema de Apostas (Clojure)</h3>
+            <p class="project-description" data-i18n="p8_desc">Plataforma de apostas desenvolvida em Clojure com controle de saldo, registro de apostas e cálculo automático de ganhos.</p>
           </div>
           <div class="project-body">
             <div class="project-tech">
@@ -423,7 +444,7 @@
             <div class="project-links">
               <a href="https://github.com/natanAzevedo/bet-project" target="_blank" rel="noopener" class="project-link">
                 <i class="fab fa-github"></i>
-                Código
+                <span data-i18n="link_code">Código</span>
               </a>
             </div>
           </div>
@@ -435,9 +456,9 @@
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title">Vamos Conversar?</h2>
+      <h2 class="section-title" data-i18n="contact_title">Vamos Conversar?</h2>
       <div class="contact-content">
-        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;">
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;" data-i18n="contact_subtitle">
           Estou sempre aberto a novas oportunidades e colaborações. Entre em contato comigo!
         </p>
 
@@ -445,7 +466,7 @@
           <div class="contact-item">
             <i class="fas fa-envelope contact-icon"></i>
             <div>
-              <h3 style="margin-bottom: 0.5rem;">Email</h3>
+              <h3 style="margin-bottom: 0.5rem;" data-i18n="contact_email_title">Email</h3>
               <a href="mailto:nattanael.freitas300@gmail.com" class="contact-link">
                 nattanael.freitas300@gmail.com
               </a>
@@ -455,7 +476,7 @@
           <div class="contact-item">
             <i class="fab fa-whatsapp contact-icon"></i>
             <div>
-              <h3 style="margin-bottom: 0.5rem;">WhatsApp</h3>
+              <h3 style="margin-bottom: 0.5rem;" data-i18n="contact_whatsapp_title">WhatsApp</h3>
               <a href="https://wa.me/5585987894976" target="_blank" rel="noopener" class="contact-link">
                 +55 (85) 98789-4976
               </a>
@@ -465,7 +486,7 @@
           <div class="contact-item">
             <i class="fab fa-linkedin contact-icon"></i>
             <div>
-              <h3 style="margin-bottom: 0.5rem;">LinkedIn</h3>
+              <h3 style="margin-bottom: 0.5rem;" data-i18n="contact_linkedin_title">LinkedIn</h3>
               <a href="https://www.linkedin.com/in/natanael-freitas-azev/" target="_blank" rel="noopener"
                 class="contact-link">
                 natanael-freitas-azev
@@ -476,7 +497,7 @@
           <div class="contact-item">
             <i class="fab fa-github contact-icon"></i>
             <div>
-              <h3 style="margin-bottom: 0.5rem;">GitHub</h3>
+              <h3 style="margin-bottom: 0.5rem;" data-i18n="contact_github_title">GitHub</h3>
               <a href="https://github.com/natanAzevedo" target="_blank" rel="noopener" class="contact-link">
                 natanAzevedo
               </a>
@@ -486,8 +507,8 @@
 
         <div
           style="margin-top: 3rem; padding: 2rem; background: var(--bg-card); border-radius: 1rem; border: 1px solid var(--border);">
-          <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Formação & Certificações</h3>
-          <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+          <h3 style="margin-bottom: 1rem; color: var(--text-primary);" data-i18n="edu_title">Formação & Certificações</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;" data-i18n-html="edu_degree">
             <strong>Bacharelado em Ciência da Computação</strong> - UNIFOR<br>
             <em>Formado em 2026</em>
           </p>
@@ -505,8 +526,8 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Natanael Azevedo. Todos os direitos reservados.</p>
-      <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+      <p data-i18n-html="footer_rights">&copy; 2026 Natanael Azevedo. Todos os direitos reservados.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.9rem;" data-i18n="footer_location">
         Fortaleza - CE
       </p>
     </div>
@@ -605,12 +626,14 @@
         const parent = this.parentElement;
         if (parent) {
           parent.classList.add('placeholder-media', 'gradient-civic');
+          const tag = (typeof translations !== 'undefined' && translations[currentLang]?.fallback_tag) ? translations[currentLang].fallback_tag : 'Projeto';
+          const badge = (typeof translations !== 'undefined' && translations[currentLang]?.fallback_badge) ? translations[currentLang].fallback_badge : 'Código';
           parent.innerHTML = `
             <div class="placeholder-content">
               <i class="fas fa-code placeholder-icon"></i>
-              <span class="placeholder-tag">Projeto</span>
+              <span class="placeholder-tag" data-i18n="fallback_tag">${tag}</span>
             </div>
-            <span class="media-badge"><i class="fas fa-laptop-code"></i> Código</span>
+            <span class="media-badge"><i class="fas fa-laptop-code"></i> <span data-i18n="fallback_badge">${badge}</span></span>
           `;
         }
       });
